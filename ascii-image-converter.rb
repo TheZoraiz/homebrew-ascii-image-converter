@@ -5,33 +5,33 @@
 class AsciiImageConverter < Formula
   desc "Convert images into ascii art"
   homepage "https://github.com/TheZoraiz/ascii-image-converter"
-  version "1.6.0-next"
+  version "1.7.0-next"
   license "Apache 2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.6.0/ascii-image-converter_macOS_amd64_64bit.tar.gz"
-      sha256 "62ffc5d2914e6b47368e34c678a6c5c44bc4c09867d848ce8cf623649b651cf6"
+      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.7.0/ascii-image-converter_macOS_amd64_64bit.tar.gz"
+      sha256 "fdbcd456e521f570859d8ffd19bbfecf4002d650423eccac6df62f8d42f241ec"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.6.0/ascii-image-converter_macOS_arm64_64bit.tar.gz"
-      sha256 "0e0be937d2bcc2b9d8b3d2c7b936412212e362801890daa1483b75dd0dcbbabd"
+      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.7.0/ascii-image-converter_macOS_arm64_64bit.tar.gz"
+      sha256 "9b7b613112f2b95115560f5ed84c3f9082921f1d87b67155d81bcdee7e22ce41"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.6.0/ascii-image-converter_Linux_amd64_64bit.tar.gz"
-      sha256 "419c8ff3e9583da7d2b401a79a2c1c886fa6933b49403aa310c5946ca4eae545"
+      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.7.0/ascii-image-converter_Linux_amd64_64bit.tar.gz"
+      sha256 "34117526a4c8958ceafa8086a91b3664eac2fc551a52a307e4e1217f315e56a1"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.6.0/ascii-image-converter_Linux_armv6_32bit.tar.gz"
-      sha256 "601f9fce41d14d8a97394490e5d0181eb0c2d69803054674b01a256299432e9e"
+      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.7.0/ascii-image-converter_Linux_armv6_32bit.tar.gz"
+      sha256 "293d4ff9fbf42f49feeefd8d8ba4cfea936c6c4ecfb246d53afa0093d0d460c4"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.6.0/ascii-image-converter_Linux_arm64_64bit.tar.gz"
-      sha256 "c7228858d478d45659ce9d21e917a64da6dc789550690f0b443f0e764e1cfd42"
+      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.7.0/ascii-image-converter_Linux_arm64_64bit.tar.gz"
+      sha256 "f45f622815a56e3ec8893d1912cef997879af016213ea1db3b27b51617729d87"
     end
   end
 
