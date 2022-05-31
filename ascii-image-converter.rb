@@ -5,21 +5,21 @@
 class AsciiImageConverter < Formula
   desc "Convert images into ascii art"
   homepage "https://github.com/TheZoraiz/ascii-image-converter"
-  version "1.11.0-next"
+  version "1.12.0-next"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.11.0/ascii-image-converter_macOS_amd64_64bit.tar.gz"
-      sha256 "c22c862818b4af5be9cdd11d49cf147cb2fea354a5d13ad3ef54702b5b1391a4"
+      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.12.0/ascii-image-converter_macOS_amd64_64bit.tar.gz"
+      sha256 "629937b386f2b266c2526b71927714bf232863fceec6681ae7bffd0733347f9f"
 
       def install
         bin.install "ascii-image-converter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.11.0/ascii-image-converter_macOS_arm64_64bit.tar.gz"
-      sha256 "4d776ed919cbd15eaa63da45319453fd888feca3e3d21a4b3bfe009b3c22d32a"
+      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.12.0/ascii-image-converter_macOS_arm64_64bit.tar.gz"
+      sha256 "2d6f8ed95f6e976447399605c67d194a7f7bd0dff162b0882afe54e75b6bb3f8"
 
       def install
         bin.install "ascii-image-converter"
@@ -28,25 +28,25 @@ class AsciiImageConverter < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.11.0/ascii-image-converter_Linux_armv6_32bit.tar.gz"
-      sha256 "8e1c2b58cdd15d868b8604b07f5b9bd3ec59cdd2032b04b5cfedbace97c392ea"
+    if Hardware::CPU.intel?
+      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.12.0/ascii-image-converter_Linux_amd64_64bit.tar.gz"
+      sha256 "1879e937a85518a132058f6f8e63e345e8f787e3565cbee7a2e57e608345fc42"
 
       def install
         bin.install "ascii-image-converter"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.11.0/ascii-image-converter_Linux_amd64_64bit.tar.gz"
-      sha256 "17f87445971fdb491c6ca9d4beed67044a330339b47775adffb8e3cb898ec15d"
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.12.0/ascii-image-converter_Linux_armv6_32bit.tar.gz"
+      sha256 "bbbafc947b8cc7a0a662ecf55496091545d355b29bdc63ab0916ff030f0d71ac"
 
       def install
         bin.install "ascii-image-converter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.11.0/ascii-image-converter_Linux_arm64_64bit.tar.gz"
-      sha256 "45da63d34e0d86a67f75bb2a6520a80ad3e245c7d38f928fa12598210455e222"
+      url "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.12.0/ascii-image-converter_Linux_arm64_64bit.tar.gz"
+      sha256 "b11b5d01b8a77675c9b2feb8156f895c8493e783f3a33b9bed952cefe850c740"
 
       def install
         bin.install "ascii-image-converter"
